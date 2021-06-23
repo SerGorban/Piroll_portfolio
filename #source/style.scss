@@ -63,6 +63,9 @@ header {
 		font-weight: 700;
 		letter-spacing: 1px;
 		padding-left: 2.5vw;
+		&_icon-menu {
+			display: none;
+		}
 	}
 	&__link_active a {
 		color: #10c9c3;
@@ -149,9 +152,10 @@ header {
 	padding: 100px 0;
 	&__container {
 		display: flex;
+		justify-content: space-between;
 	}
 	&__element {
-		flex-basis: 25%;
+
 		display: flex;
 	}
 	&__image {
@@ -420,6 +424,7 @@ header {
 	font-size: 12px;
 	&__wrapper {
 		display: flex;
+		justify-content: space-between;
 	}
 }
 .rights {
@@ -462,10 +467,9 @@ header {
 	&__element {
 		display: block;
 		color: #bcbcbc;
+		padding-bottom: 10px;
 	}
-	&__element:not(:first-child) {
-		padding-top: 10px;
-	}
+
 	&__element:hover {
 		text-decoration: underline;
 	}
@@ -475,11 +479,9 @@ header {
 	flex-direction: column;
 	margin-left: 10vw;
 	&__element {
+		padding-bottom: 10px;;
 		display: block;
 		color: #bcbcbc;
-	}
-	&__element:not(:first-child) {
-		padding-top: 10px;
 	}
 	&__element:hover {
 		text-decoration: underline;
