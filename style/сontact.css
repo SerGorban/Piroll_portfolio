@@ -67,6 +67,9 @@ body {
   letter-spacing: 1px;
   padding-left: 2.5vw;
 }
+.nav__link_icon-menu {
+  display: none;
+}
 .nav__link_active a {
   color: #10c9c3;
 }
@@ -169,6 +172,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rights__title {
@@ -224,9 +230,7 @@ body {
 .footer-menu__element {
   display: block;
   color: #bcbcbc;
-}
-.footer-menu__element:not(:first-child) {
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .footer-menu__element:hover {
   text-decoration: underline;
@@ -243,12 +247,119 @@ body {
   margin-left: 10vw;
 }
 .we-are-in__element {
+  padding-bottom: 10px;
   display: block;
   color: #bcbcbc;
 }
-.we-are-in__element:not(:first-child) {
-  padding-top: 10px;
-}
 .we-are-in__element:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1250px) {
+  .contacts {
+    margin-left: 7vw;
+  }
+
+  .footer-menu {
+    margin-left: 7vw;
+  }
+
+  .we-are-in {
+    margin-left: 7vw;
+  }
+}
+@media screen and (max-width: 760px) {
+  header {
+    padding-bottom: 0px;
+  }
+
+  .header {
+    padding-bottom: 50px;
+  }
+
+  .nav__link {
+    display: none;
+  }
+  .nav__link_icon-menu {
+    display: block;
+    font-size: 25px;
+  }
+  .nav__list-responsive > .nav__link {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .main {
+    padding: 50px 0;
+  }
+
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .specification {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  .specification__description {
+    margin-top: 15px;
+  }
+  .specification__sign {
+    margin-top: 25px;
+  }
+
+  .ci-form {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .ci-form__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ci-form__name {
+    width: 100%;
+  }
+  .ci-form__e-mail {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .ci-form__button {
+    margin: 30px auto;
+    display: block;
+  }
+
+  .map {
+    margin-top: 10px;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  .contacts {
+    margin-left: 5vw;
+  }
+
+  .footer-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 5vw;
+  }
+  .footer-menu__column_2 {
+    margin-left: 0;
+  }
+
+  .we-are-in {
+    margin-left: 5vw;
+  }
 }

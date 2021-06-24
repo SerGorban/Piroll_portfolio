@@ -42,6 +42,9 @@ body {
 		font-weight: 700;
 		letter-spacing: 1px;
 		padding-left: 2.5vw;
+		&_icon-menu {
+			display: none;
+		}
 	}
 	&__link_active a {
 		color: #10c9c3;
@@ -91,7 +94,7 @@ body {
 	}
 	&__button {
 		display: block;
-		flex-basis: 25%;
+		flex-basis: 40%;
 		border: none;
 		background: none;
 		cursor: pointer;
@@ -136,6 +139,7 @@ body {
 	font-size: 12px;
 	&__wrapper {
 		display: flex;
+		justify-content: space-between;
 	}
 }
 .rights {
@@ -178,10 +182,9 @@ body {
 	&__element {
 		display: block;
 		color: #bcbcbc;
+		padding-bottom: 10px;
 	}
-	&__element:not(:first-child) {
-		padding-top: 10px;
-	}
+
 	&__element:hover {
 		text-decoration: underline;
 	}
@@ -191,13 +194,88 @@ body {
 	flex-direction: column;
 	margin-left: 10vw;
 	&__element {
+		padding-bottom: 10px;;
 		display: block;
 		color: #bcbcbc;
-	}
-	&__element:not(:first-child) {
-		padding-top: 10px;
 	}
 	&__element:hover {
 		text-decoration: underline;
 	}
+}
+
+// adaptive
+@media screen and (max-width: 1250px) {
+	// footer
+    .contacts {
+        margin-left: 7vw;
+    }
+    .footer-menu {
+        margin-left: 7vw;
+    }
+    .we-are-in {
+        margin-left: 7vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+	// header
+    header {
+        padding-bottom: 0;
+    }
+    .header {
+        padding-bottom: 50px;
+    }
+	.nav {
+		&__link {
+			display: none;
+			&_icon-menu {
+				display: block;
+				font-size: 25px;
+			}
+		}
+		&__list {
+			&-responsive > .nav__link {
+				display: block;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.project {
+		&__conteiner {
+			flex-direction: column;
+		}
+		&__specification {
+			flex-basis: 100%;
+			padding: 50px 7vw;
+			text-align: center;
+		}
+		&__empty {
+			flex-basis: 100%;
+			padding: 200px 0;
+		}
+	}
+
+	// switch
+	.switch {
+		padding: 15px 0;
+	}
+	
+	// footer
+    .footer {
+        padding: 50px 0;
+    }
+    .contacts {
+        margin-left: 5vw;
+    }
+    .footer-menu {
+        flex-direction: column;
+        margin-left: 5vw;
+        &__column_2 {
+			margin-left: 0;
+		}
+    }
+    .we-are-in {
+        margin-left: 5vw;
+    }
 }
