@@ -1,12 +1,6 @@
 // Обнуление
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	color: #000;
-	box-sizing: border-box;
-}
+@import "../import/zeroing.html";
+
 @mixin line-gradient($border) {
 	background: linear-gradient(to right, #10c9c3 $border, #d8d8d8 $border);
 }
