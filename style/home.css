@@ -217,19 +217,14 @@ body {
 .gallery__element {
   position: relative;
   padding: 50%;
+  background: #21bfb9;
 }
 .gallery__element:hover:after {
-  content: "";
-  display: block;
+  content: url(../img/look.png);
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(33, 191, 185, 0.6);
-  background-image: url(../img/look.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -241,6 +236,31 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.gallery__img:hover {
+  opacity: 0.4;
+}
+.gallery__img[tabindex="0"] {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+.gallery__img[tabindex="0"]:focus {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  -webkit-box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210, 210, 210, 0.4);
+          box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210, 210, 210, 0.4);
+}
+.gallery__img[tabindex="0"]:focus, .gallery__img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
 }
 
 .footer {

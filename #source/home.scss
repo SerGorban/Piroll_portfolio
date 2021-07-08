@@ -80,21 +80,15 @@ body {
 	&__element {
 		position: relative;
 		padding: 50%;
+		background: rgb(33, 191, 185);
 	}
 	&__element:hover:after{
-		content: '';
-		display: block;
+		content: url(../img/look.png);
 		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba(33, 191, 185, 0.6);
-  		background-image: url(../img/look.png);
-  		background-position: center;
-  		background-repeat: no-repeat;
+		transform: translate(-50%, -50%);
+		z-index: 2;
   		cursor: zoom-in;
-	  }
+	}
 	&__img {
 		position: absolute;
 		top: 0;
@@ -102,9 +96,32 @@ body {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		&:hover {
+			opacity: 0.4;
+		}
+		&[tabindex="0"] {
+			cursor: zoom-in;
+		}
+		&[tabindex="0"]:focus {
+			position: fixed;
+			z-index: 10;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: auto;
+			height: auto;
+			max-width: 99%;
+			max-height: 99%;
+			margin: auto;
+			box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+		}
+		&[tabindex="0"]:focus,
+		&[tabindex="0"]:focus ~ * {
+			pointer-events: none;
+		}
 	}
 }
-
 
 // footer
 .footer {
