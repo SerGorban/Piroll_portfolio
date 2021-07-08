@@ -140,7 +140,7 @@ body {
 .project__empty {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  background-color: #e1e1e1;
+  background: url(../img/projects/portfolio-single-2.jpg) center/cover no-repeat;
 }
 .project__title {
   font-size: 30px;

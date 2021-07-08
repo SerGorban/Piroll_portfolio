@@ -63,7 +63,7 @@ body {
 // main
 // amelia-woods
 .amelia-woods {
-	background-color: #3e3e3e;
+	background: url(../img/am1.jpg) 50% 50%/cover no-repeat;
 	padding: 120px 31vw;
 	text-align: center;
 	&__title {
@@ -119,9 +119,10 @@ body {
 // about-me
 .about-me {
 	display: flex;
+	background: #F5F5F5;
 	&__empty {
 		flex-basis: 50%;
-		background-color: #e1e1e1;
+		background: url(../img/am7.jpg) 0 0/auto 100% no-repeat
 	}
 	&__content {
 		flex-basis: 50%;
@@ -240,6 +241,13 @@ body {
 		padding: 80px 20vw;
 	}
 
+	// about-me
+	.about-me {
+		&__empty {
+			background-position: 60% 0;
+		}
+	}
+
 	// need-a-project
 	.need-a-project {
 		padding: 80px 20vw;
@@ -303,7 +311,7 @@ body {
 		display: flex;
 		&__empty {
 			flex-basis: 25%;
-			background-color: #e1e1e1;
+			background-position: 80% 0;
 		}
 		&__content {
 			flex-basis: 75%;

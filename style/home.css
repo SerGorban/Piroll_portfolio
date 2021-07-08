@@ -129,6 +129,7 @@ body {
 
 .text {
   padding: 100px 0;
+  background: #F6F6F6;
 }
 .text__wrapper {
   width: 35%;
