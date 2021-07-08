@@ -1,5 +1,5 @@
 // Обнуление
-@import "../import/zeroing.html";
+@import "zeroing.scss";
 
 @mixin line-gradient($border) {
 	background: linear-gradient(to right, #10c9c3 $border, #d8d8d8 $border);
