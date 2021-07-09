@@ -135,6 +135,12 @@ body {
 		display: flex;
 		justify-content: space-between;
 	}
+	&__info {
+		display: flex;
+	}
+	&__links {
+		display: flex;
+	}
 }
 .rights {
 	&__title {
@@ -273,4 +279,32 @@ body {
     .we-are-in {
         margin-left: 5vw;
     }
+}
+
+@media screen and (max-width: 500px) {
+	// footer
+	.footer {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__info {
+			flex-direction: column;
+			margin: auto;
+		}
+		&-menu {
+			flex-direction: row;
+			margin: 0;
+			&__column {
+				margin-right: 10vw;
+			}
+		}
+		&__links {
+			justify-content: space-around;
+		}
+	}
+	.rights, .contacts {
+		text-align: center;
+		padding-bottom: 25px;
+		margin: 0;
+	}
 }

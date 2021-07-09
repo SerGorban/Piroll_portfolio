@@ -102,7 +102,7 @@ body {
 			opacity: 0.4;
 		}
 		&:not(:hover) {
-			transition: 1.5s;
+			transition: 1s;
 		}
 		&[tabindex="0"] {
 			cursor: zoom-in;
@@ -136,6 +136,12 @@ body {
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+	}
+	&__info {
+		display: flex;
+	}
+	&__links {
+		display: flex;
 	}
 }
 .rights {
@@ -293,5 +299,31 @@ body {
 	.gallery {
 		grid-template-columns: 100%;
 		grid-template-rows:	repeat(12, 8.333%);
+	}
+
+	// footer
+	.footer {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__info {
+			flex-direction: column;
+			margin: auto;
+		}
+		&-menu {
+			flex-direction: row;
+			margin: 0;
+			&__column {
+				margin-right: 10vw;
+			}
+		}
+		&__links {
+			justify-content: space-around;
+		}
+	}
+	.rights, .contacts {
+		text-align: center;
+		padding-bottom: 25px;
+		margin: 0;
 	}
 }
