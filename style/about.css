@@ -390,6 +390,12 @@ body {
     display: block;
     margin-top: 20px;
     font-size: 20px;
+    text-align: end;
+  }
+  .nav__list-responsive > .nav__link:first-child {
+    font-size: 25px;
+    text-align: end;
+    margin-top: 0px;
   }
 
   .amelia-woods {
