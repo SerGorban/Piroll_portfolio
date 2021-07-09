@@ -231,6 +231,13 @@ header {
 		}
 	}
 }
+.gallery-section__description {
+	display: block;
+	padding: 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+	background: #F5F5F5;
+}
 
 // our work process
 .our-work-process {
@@ -571,30 +578,6 @@ header {
     .gallery {
         grid-template-columns: 50% 50%;
         grid-template-rows:	25% 25% 25% 25%;
-        &__element_1 {
-            background: #838383;
-        }
-        &__element_2 {
-            background: #dddddd;
-        }
-        &__element_3 {
-            background: #dddddd;
-        }
-        &__element_4 {
-            background: #838383;
-        }
-        &__element_5 {
-            background: #838383;
-        }
-        &__element_6 {
-            background: #dddddd;
-        }
-        &__element_7 {
-            background: #dddddd;
-        }
-        &__element_8 {
-            background: #838383;
-        }
     }
 
     // our work process
@@ -722,6 +705,9 @@ header {
 				box-shadow: none;
 			}
 		}
+	}
+	.gallery-section__description {
+		padding: 15px 0;
 	}
 
 	// footer
