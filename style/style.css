@@ -333,7 +333,13 @@ header {
      object-fit: cover;
 }
 .gallery__img:hover {
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
   opacity: 0.4;
+}
+.gallery__img:not(:hover) {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 .gallery__img[tabindex="0"] {
   cursor: -webkit-zoom-in;
@@ -698,7 +704,8 @@ header {
   }
   .nav__list-responsive > .nav__link {
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 20px;
   }
 
   .home {
