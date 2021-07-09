@@ -688,6 +688,40 @@ header {
 	.gallery {
 		grid-template-columns: 100%;
 		grid-template-rows:	repeat(12, 12.5%);
+		&__element {
+			position: relative;
+			padding: 50%;
+			background: none;
+		}
+		&__element:hover:after{
+			content: none;
+			position: static;
+			transform: none;
+			z-index: 0;
+			  cursor: default;
+		}
+		&__img {
+			&:hover {
+				transition: none;
+				opacity: 1;
+			}
+			&:not(:hover) {
+				transition: none;
+			}
+			&[tabindex="0"] {
+				cursor: default;
+			}
+			&[tabindex="0"]:focus {
+				position: absolute;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				max-width: 100%;
+				max-height: 100%;
+				margin: auto;
+				box-shadow: none;
+			}
+		}
 	}
 
 	// footer
