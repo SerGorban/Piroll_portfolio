@@ -76,7 +76,7 @@ body {
     display: flex;
 }
 .header__link {
-	margin: 0 0 0 25px;
+	margin: 0 0 0 50px;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -548,7 +548,7 @@ body {
 @media screen and (max-width: 760px) {
 	// header
     .top-of-page {
-        padding: 100px 0 50px;
+        padding: 200px 0 50px;
 		background: url(../img/sp1.jpg) bottom left /contain no-repeat, rgb(236, 236, 236);
     }
 
@@ -773,6 +773,11 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+
+	// header
+	.top-of-page {
+		padding: 100px 0 50px;
+	}
 	// gallery
 	.gallery {
 		grid-template-columns: 100%;
