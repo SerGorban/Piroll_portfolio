@@ -1,8 +1,5 @@
-menu.onclick = function myFunction() {
-	var a = document.getElementById('topnav');
-	if (a.className === "nav__list") {
-		a.className += " nav__list-responsive";
-	} else {
-		a.className = "nav__list";
-	}
-}
+document.querySelector('.header__burger').addEventListener('click', function() {
+    document.querySelector('.header__burger').classList.toggle('active');
+    document.querySelector('.header__menu').classList.toggle('active');
+    document.querySelector('body').classList.toggle('lock');
+});
