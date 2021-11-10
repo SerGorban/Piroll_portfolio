@@ -121,8 +121,26 @@ body {
 		justify-content: space-between;
 	}
 	&__element {
-
 		display: flex;
+		transform: scale(0);
+		opacity: 0;
+		transition: all 1.2s ease 0s;
+		&:nth-child(1) {
+			transition: all 1.2s ease 0.0s;
+		}
+		&:nth-child(2) {
+			transition: all 1.2s ease 0.2s;
+		}
+		&:nth-child(3) {
+			transition: all 1.2s ease 0.4s;
+		}
+		&:nth-child(4) {
+			transition: all 1.2s ease 0.6s;
+		}
+		&.anim-active {
+			transform: scale(1);
+			opacity: 1;
+		}
 	}
 	&__image {
 		width: 40px;
