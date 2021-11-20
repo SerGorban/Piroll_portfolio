@@ -676,12 +676,12 @@ body.lock {
   background-color: #10c9c3;
   padding-top: 185px;
   padding-bottom: 55px;
-}
-.slider-quotes__quote-container_2 {
-  width: 60vw;
-  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 .slider-quotes__quote {
+  width: 60vw;
+  margin: 0 auto;
   text-align: center;
   color: #fff;
   font-size: 20px;
@@ -699,31 +699,26 @@ body.lock {
   font-weight: 500;
 }
 
-.slider-buttons {
-  position: relative;
-}
-.slider-buttons__container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.slider-buttons__button {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  width: 6px;
-  height: 6px;
-  border: none;
-  border-radius: 50%;
-  margin: 4px;
-  cursor: pointer;
-}
-.slider-buttons_active {
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
   width: 10px;
   height: 10px;
-  border: none;
-  border-radius: 50%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  opacity: 0;
+  height: 100%;
+  width: 7%;
+  top: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
 }
 
 .labels {
@@ -1257,8 +1252,9 @@ body.lock {
     padding-top: 50px;
     padding-bottom: 35px;
   }
-  .slider-quotes__quote-container_2 {
-    width: 90%;
+  .slider-quotes__quote {
+    width: 100%;
+    margin: 0 auto;
   }
   .slider-quotes__quote-author {
     padding-bottom: 50px;

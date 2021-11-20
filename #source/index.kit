@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Piroll</title>
 	<link rel="shortcut icon" href="img/logo.png" type="image/png">
+	<link rel="stylesheet" href="style/swiper-bundle.min.css">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -278,22 +279,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="slider-quotes">
-					<div class="wrapper">
-						<div class="slider-quotes__quote-container_2">
-							<blockquote class="slider-quotes__quote">
-								“ Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.”
-							</blockquote>
-							<span class="slider-quotes__quote-author">Michael Hopkins</span>
-						</div>
-						<div class="slider-buttons">
-							<div class="slider-buttons__container">
-								<button class="slider-buttons__button"></button>
-								<button class="slider-buttons__button slider-buttons_active"></button>
-								<button class="slider-buttons__button"></button>
+				<div class="slider-quotes swiper-container">
+					<div class="swiper-wrapper">
+						<div class="slider-quotes__item swiper-slide">
+							<div class="wrapper">
+								<blockquote class="slider-quotes__quote">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis quisquam quae dolor deleniti, expedita iure velit nihil hic illo.
+								</blockquote>
+								<span class="slider-quotes__quote-author">Lorem ipsum 1</span>
 							</div>
 						</div>
-					</div>	
+						<div class="slider-quotes__item swiper-slide">
+							<div class="wrapper">
+								<blockquote class="slider-quotes__quote">
+									“ Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.”
+								</blockquote>
+								<span class="slider-quotes__quote-author">Michael Hopkins</span>
+							</div>
+						</div>
+						<div class="slider-quotes__item swiper-slide">
+							<div class="wrapper">
+								<blockquote class="slider-quotes__quote">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus error rerum blanditiis, sed quo, quia commodi, aspernatur molestias ad dignissimos voluptatum odio veritatis consequuntur numquam iure.
+								</blockquote>
+								<span class="slider-quotes__quote-author">Lorem ipsum 3</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination"></div>
 				</div>
 				<div class="wrapper">
 					<div class="labels">
@@ -340,5 +355,8 @@
 	<script type="text/javascript" src="js/script_progress-bar.js"></script>
 	<script type="text/javascript" src="js/popups.js"></script>
 	<script type="text/javascript" src="js/scroll_animation.js"></script>
+
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/slider.js"></script>
 </body>
-</html>s
+</html>

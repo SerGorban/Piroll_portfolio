@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Project</title>
 	<link rel="shortcut icon" href="img/logo.png" type="image/png">
+	<link rel="stylesheet" href="style/swiper-bundle.min.css">
 	<link rel="stylesheet" href="style/project_single.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -52,21 +53,51 @@
 		</div>
 	</header>
 	<main>
-		<section class="project">
-			<div class="project__conteiner">
-				<div class="project__specification">
-					<h1 class="project__title title">Light Breakfast</h1>
-					<p class="project__description description">Light his can't a creeping. Be, bring blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.<br><br> 
-					Cattle. Dominion day herb she'd creeping divide darkness.<br>
-					Which. Subdue had.</p>
-					<p class="project__sign">
-						<span class="project__sign_thick">Client:</span>  Emma Morris<br>
-						<span class="project__sign_thick">Date:</span>   25.06.2017<br>
-						<span class="project__sign_thick">Share:</span>  Facebook, Twitter, Pinterest
-					</p>
-				</div>
-				<div class="project__empty"></div>
-			</div>
+		<section class="project swiper-container">
+            <div class="swiper-wrapper">
+                <div class="project__conteiner swiper-slide">
+                    <div class="project__specification">
+                        <h1 class="project__title title">Light Breakfast</h1>
+                        <p class="project__description description">Light his can't a creeping. Be, bring blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.<br><br> 
+                        Cattle. Dominion day herb she'd creeping divide darkness.<br>
+                        Which. Subdue had.</p>
+                        <p class="project__sign">
+                            <span class="project__sign_thick">Client:</span>  Emma Morris<br>
+                            <span class="project__sign_thick">Date:</span>   25.06.2017<br>
+                            <span class="project__sign_thick">Share:</span>  Facebook, Twitter, Pinterest
+                        </p>
+                    </div>
+                    <div class="project__img project__img_1"></div>
+                </div>
+                <div class="project__conteiner swiper-slide">
+                    <div class="project__specification">
+                        <h1 class="project__title title">Lorem, ipsum2</h1>
+                        <p class="project__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum modi dicta cum velit. Delectus laudantium rerum natus, minus earum quas quidem aliquam dolorum repudiandae?<br><br> 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, dolor?<br>
+                        Lorem ipsum dolor sit.</p>
+                        <p class="project__sign">
+                            <span class="project__sign_thick">Client:</span>  Lorem ipsum2<br>
+                            <span class="project__sign_thick">Date:</span>   01.01.2019<br>
+                            <span class="project__sign_thick">Share:</span>  Facebook, Twitter, Pinterest
+                        </p>
+                    </div>
+                    <div class="project__img project__img_2"></div>
+                </div>
+                <div class="project__conteiner swiper-slide">
+                    <div class="project__specification">
+                        <h1 class="project__title title">Lorem, ipsum3</h1>
+                        <p class="project__description description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, obcaecati impedit magnam assumenda magni soluta facere laboriosam ut neque dolor?<br><br> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Lorem, ipsum dolor.</p>
+                        <p class="project__sign">
+                            <span class="project__sign_thick">Client:</span>  Lorem ipsum3<br>
+                            <span class="project__sign_thick">Date:</span>   01.01.2020<br>
+                            <span class="project__sign_thick">Share:</span>  Facebook, Twitter, Pinterest
+                        </p>
+                    </div>
+                    <div class="project__img project__img_3"></div>
+                </div>
+            </div>
 			<div class="switch">
 				<div class="switch__wrapper wrapper">
 					<button class="switch__button switch__button_left">previous project</button>
@@ -79,5 +110,8 @@
 	<!-- @import "../import/footer.html" -->
 	<script type="text/javascript" src="js/script_nav.js"></script>
 	<script type="text/javascript" src="js/script_progress-bar.js"></script>
+
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/slider.js"></script>
 </body>
 </html>
