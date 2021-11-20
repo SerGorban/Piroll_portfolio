@@ -11,6 +11,7 @@ new Swiper('.slider-quotes', {
         dynamicBullets: true,
     },
     touchRatio: 2,
+    autoHeight: true,
     grabCursor: true,
     centeredSlides: true,
     initialSlide: centralSlide,
